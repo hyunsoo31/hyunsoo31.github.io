@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+		<link rel="stylesheet" href='{% static "assets/css/main.css" %}' />
+			<section id="contact" class="main style3 secondary">
+				<div class="content">
+
+                    <form action="" method="post">
+                        {% csrf_token %}
+
+						<h2 style="margin-top:100px;">새 글 작성</h2>
+						<p>자유롭게 쓰고 싶은 이야기를 작성하세요!</p>
+
+					<div class="box">
+
+							<div class="fields">
+								<input name="title" type="text" placeholder="Title">
+
+								<div class="field"><textarea name="text" rows="6" placeholder="Content" style="margin-top:30px; margin-bottom:30px;"></textarea></div>
+							</div>
+							<ul class="actions special">
+								<button type="submit" class="btn btn-primary btn-lg">글 등록</button>
+							</ul>
+
+					</div>
+                    </form>
+				</div>
+			</section>
+
+<!--
+<form action="" method="post">
+    {% csrf_token %}
+    <h2 class="post-add">새 글 작성</h2>
+    <div class="container">
+        <div class="form-group">
+            <label for="input-title">제목: </label>
+            <input name="title" id="input-title" type="text" class="form-control" placeholder="글 제목">
+        </div>
+        <div class="form-group">
+            <label for="input-content">내용: </label>
+            <textarea name="text" id="input-content" class="form-control" rows="5" placeholder="글 내용"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">글 등록</button>
+    </div>
+</form>
+-->
+{% endblock %}

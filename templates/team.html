@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+	<link rel="stylesheet" href='{% static "assets/css/main.css" %}' />
+		<link rel="stylesheet" href='{% static "assets/css/main4.css" %}' />
+		<noscript><link rel="stylesheet" href='{% static "assets/css/noscript.css" %}' /></noscript>
+
+	<body class="is-preload">
+
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src='{% static "images/team.jpg" %}'alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+
+								<h1>Hello. We're</h1>
+								<h1><strong>Team. Challengers</strong>.</h1>
+
+							<p>안녕하세요 3명의 대학생으로 구성되어 있는 챌린져스 팀입니다.</p>
+							<!--
+							<a href="#work" class="button large scrolly">Learn about what I do</a>
+							-->
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Work -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+
+						<h2>Here's all of the members.</h2>
+						<p>team. challengers</p>
+						<p>.</p>
+
+
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span><img src='{% static "img/test/조현수.jpg" %}' style="width: 250px; height: 300px; "></span>
+								<h3>조현수</h3>
+								<h5>대표이사</h5>
+								<p>건국대학교 경제학과 중퇴</p>
+								<p>성균관대학교 프랑스어문학과</p>
+								<p>성균관대학교 인포매틱스 융합전공</p>
+								<p>성균관대학교 제49대 문과대학 학생회 집행부</p>
+								<p>9사단 백마부대 육군 병장 만기 전역</p>
+								<p>9사단 3대대 12중대 직사소대 3분대장 출신</p>
+
+
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span><img src='{% static "img/test/이청수.jpg" %}' style="width: 250px; height: 300px; "></span>
+								<h3>이청수</h3>
+								<h5>최고 기술 책임자(CTO)</h5>
+								<p>서울대학교 중퇴(본인피셜/진위여부 확인 불가)</p>
+								<p>성균관대학교 프랑스어문학과</p>
+								<p>성균관대학교 컴퓨터공학과</p>
+								<p>성균관대학교 제49대 문과대학 학생회 집행부 사퇴</p>
+								<p>세종대왕 후손 (밀성군파)</p>
+								<p>육군 병장 전역</p>
+
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span><img src='{% static "img/test/유재영.jpg" %}' style="width: 250px; height: 300px; "></span>
+								<h3>유재영</h3>
+								<h5>최고 경영자(CEO)</h5>
+								<p>충북대학교 국제경영학과</p>
+								<p>충북대학교 친목질 주도</p>
+								<p>충북대학교 2018년 올해의 인물</p>
+								<p>충북대학교 2019년 여심 저격 남</p>
+								<p>9사단 백마부대 육군 병장 만기 전역</p>
+								<p>9사단 3대대 12중대 직사소대 4분대장 출신</p>
+
+							</section>
+						</div>
+					</div>
+
+				</div>
+			</article>
+	<body class="is-preload" style="padding-top:50px;">
+
+
+
+		<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+
+						<h2>Our Work</h2>
+						<p>챌린저스팀의 활동입니다.</p>
+
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href='{% static "images/fulls/1.jpg" %}' class="image fit"><img src='{% static "images/thumbs/1.jpg" %}'title="정기 회의" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href='{% static "images/02.jpg" %}' class="image fit"><img src='{% static "images/thumbs/2.jpg" %}'title="경기창조혁신센터 데모데이 발표" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href='{% static "images/fulls/3.jpg" %}' class="image fit"><img src='{% static "images/thumbs/3.jpg" %}' title="창업 빌드업 아카데미" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href='{% static "images/fulls/4.jpg" %}'class="image fit"><img src='{% static "images/thumbs/4.jpg" %}'title="연세대 KSCY 캠프 수료" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href='{% static "images/fulls/5.jpg" %}'class="image fit"><img src='{% static "images/thumbs/5.jpg" %}' title="문화창업가 멘토링" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href='{% static "images/fulls/6.jpg" %}' class="image fit"><img src='{% static "images/thumbs/6.jpg" %}'title="SK 루키 Contest" alt="" /></a>
+							</article>
+						</div>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<!--
+			<footer id="footer">
+-->
+				<!-- Icons -->
+				<!--
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+					</ul>
+					-->
+
+				<!-- Menu -->
+				<!--
+					<ul class="menu">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+-->
+		<!--
+			</footer>
+			-->
+
+		<!-- Scripts -->
+			<script src='{% static "assets/js/jquery.min.js" %}'></script>
+			<script src='{% static "assets/js/jquery.poptrox.min.js" %}'></script>
+			<script src='{% static "assets/js/jquery.scrolly.min.js" %}'></script>
+			<script src='{% static "assets/js/jquery.scrollex.min.js" %}'></script>
+			<script src='{% static "assets/js/browser.min.js" %}'></script>
+			<script src='{% static "assets/js/breakpoints.min.js" %}'></script>
+			<script src='{% static "assets/js/util.js" %}'></script>
+			<script src='{% static "assets/js/main.js" %}'></script>
+
+	</body>
+{% endblock content %}
+		<!-- Portfolio -->
+		<!--
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+
+						<h2>Here’s some stuff I made recently.</h2>
+						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src= '{% static "images/pic01.jpg" %}'alt="" /></a>
+								<h3><a href="#">Magna feugiat</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src='{% static "images/pic02.jpg" %}'alt="" /></a>
+								<h3><a href="#">Veroeros primis</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src='{% static "images/pic03.jpg" %}'alt="" /></a>
+								<h3><a href="#">Lorem ipsum</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src='{% static "images/pic04.jpg" %}'alt="" /></a>
+								<h3><a href="#">Tempus dolore</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src='{% static "images/pic05.jpg" %}'alt="" /></a>
+								<h3><a href="#">Feugiat aliquam</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src='{% static "images/pic06.jpg" %}'alt="" /></a>
+								<h3><a href="#">Sed amet ornare</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#contact" class="button large scrolly">Get in touch with me</a>
+					</footer>
+				</div>
+			</article>
+			-->
+
+		<!-- Contact -->
+
+
+
+		<!-- Scripts -->

@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<link rel="stylesheet" href='{% static "assets/css/main.css" %}' />
+<div style = "width:100%; height:50px; background-color:black;">
+</div>
+<body>
+    <!-- header -->
+
+			<section id="coming-soon" class="main style1 dark fullscreen">
+				<div class="content">
+
+						<h2>준비 중 입니다.</h2>
+					<p style="font-size: 60px; margin-top:40px;">Coming     <strong>Soon</strong></p>
+
+				</div>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src='{% static "assets/js/jquery.min.js" %}'></script>
+			<script src='{% static "assets/js/browser.min.js" %}'></script>
+			<script src='{% static "assets/js/breakpoints.min.js" %}'></script>
+			<script src='{% static "assets/js/util.js" %}'></script>
+			<script src='{% static "assets/js/main.js" %}'></script>
+
+	</body>
+
+
+</body>
+
+{% endblock content %}
