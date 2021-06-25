@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro</title>
+  <style>
+    body {      
+      background:url('images/intro.jpg') no-repeat fixed;   /* 배경 이미지 */
+      background-size: 100% 100%;   /*배경 이미지 크기 */
+      
+    }
+    @media screen and (max-width:1024px) {
+      body {
+        background: url(images/bg1.jpg) no-repeat fixed;  /* 가로가 1024px 이하면 bg1.jpg 지정 */
+        background-size: 100% 100%;
+      }
+    }
+    @media screen and (max-width:768px) {
+      body {
+        background: url(images/bg2.jpg) no-repeat fixed;  /* 가로가 768px 이하면 bg2.jpg 지정 */
+        background-size: 100% 100%;
+      }
+    }
+    h1 {
+      margin-top:150px;   /* 상단 마진 */
+      font-size:80px;  /* 글자 크기 */
+      text-align: center;     /* 가운데 정렬 */
+      color:#fff;  /* 글자 색 */
+      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
+    }
+    h2 {
+      font-size: 7vw; 
+      text-align: center;     /* 가운데 정렬 */
+      color:#fff;  /* 글자 색 */
+      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
+
+    }
+    h3 {
+      font-size: 3vw; 
+      text-align: right;     /* 가운데 정렬 */
+      color:#fff;  /* 글자 색 */
+      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
+      opacity: 0.5;
+    }
+    #container{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    p {
+      font-size:1.2em;
+    }
+    .display {
+      font-weight:bold;
+      color:rgb(255, 255, 255 );
+    }
+    a{
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <a href="index.html"><h1>Want to know more?</h1></a>
+
+  <div id="container">
+    <p><h2><span id="current" class="display"></span></h2></p>
+  </div>
+  <div>
+    <p><h3><span id="today" class="display"></span></h3></p>
+  </div>
+
+  <script>
+    setInterval(displayNow, 1000);  // 1초마다 시간 계산 함수 실행
+    
+
+    function displayNow() {  // 시간 계산 함수
+      var now = new Date();     // Date 객체의 인스턴스를 만듦    
+      var date = new Date();  
+  
+      var currentTime = now.toLocaleTimeString();     //  toLocaleTmeString() 메서드를 사용해 지역에 맞는 시간을 가져옴
+      //var currentTime = now.toTimeString(); // 시간 GMT+900 (KOREAN STANDRAD)
+      //var currentTime = now.toDateString(); // 시간 정보 x
+      //var currentTime = now.toLocaleString(); // m/d/y time
+      var year = String(date.getFullYear());
+      var month = String(date.getMonth()+1);
+      var date = String(date.getDate());
+      if(month.length==1) {
+        month = "0" + month;
+      }
+      if(date.length==1){
+        date = "0" + date;
+      }
+      var today = year +"-"+ month + "-"+ date;
+      
+
+    
+      document.querySelector("#current").innerHTML = currentTime;   // id="current" 인 요소에 현재 시간 표시
+      document.querySelector("#today").innerHTML = today;   // id="current" 인 요소에 현재 시간 표시
+   
+    }
+  </script>
+ </body>
+</html>
