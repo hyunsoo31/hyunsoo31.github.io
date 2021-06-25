@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Shufflay</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+
+        <!-- Custom Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Cute+Font|Patua+One|Do+Hyeon|Nanum+Gothic|Nanum+Myeongjo|Lobster|Dancing+Script|Yeon+Sung&display=swap&subset=korean" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"}'>
+
+        <link rel="stylesheet" href="static/css/test.css" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link rel="stylesheet" href="static/css/animate.min.css" type="text/css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="static/css/creative.css" type="text/css">
+        <link rel="stylesheet" href="static/css/test2.css"type="text/css">
+        <link rel="stylesheet" href="static/css/test3.css" type="text/css">
+        <!-- 존수존수가 추가한 New CSS-->
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+        <![endif]-->
+
+    </head>
+<script src="static/js/photo.js"></script>
+<script src="static/js/jquery.js"></script>
+
+<body class="photobox">
+
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" style="letter-spacing: 0em;" href="/shufflay/base.html">Shufflay's BGM 저장소</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="letter-spacing: 0em;font-size: 0px;">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a class="page-scroll" href="/shufflay/account.html">계정관리</a>
+                </li>
+                <!--
+                <li>
+                    <a class="page-scroll" href="/library">라이브러리</a>
+                </li>
+                -->
+                <li>
+                    <a class="page-scroll" href="/shufflay/bgm.html">BGM</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/shufflay/photo.html">사진</a>
+                </li>
+                <!--
+                <li>
+                    <a class="page-scroll" href="/hot">인기차트</a>
+                </li>
+                -->
+                <li>
+                    <a class="page-scroll" href="/shufflay/community.html">커뮤니티</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/shufflay/upload_file.html/">업로드</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/shufflay/customer.html">고객지원</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/shufflay/team.html">team 소개</a>
+                </li>
+                 <!-- {% if user.is_active %}
+                <li><a href="{% url 'account' %}"> <span class="glyphicon glyphicon-heart"></span> {{user.username}}</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                <li><a href="{% url 'login' %}"> <span class="glyphicon glyphicon-user"></span> Login</a></li>
+                <li><a href="{% url 'admin:index' %}">Admin</a></li>
+                {% endif %} -->
+            </ul>
+
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+
+    <!-- /.container-fluid -->
+</nav>
+
+<div style = "width:100%; height:50px; background-color:black;">
+</div>
+
+    <div class="jumbotron text-center" style="width: 100%; background-color: #212121;">
+        <h1 style="font-family: 'Dancing Script', cursive; color: white; font-weight: bold; font-size: 100px;">Building Gallery.</h1>
+        <p></p>
+      <a href="/shufflay/photo.html" class="btn btn-primary btn-xl page-scroll" style="margin:0px;">사진페이지로</a>
+    </div>
+
+
+<!-- <figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/에펠탑.jpg" alt="sq-sample14" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/에펠탑.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/1.jpg" alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/1.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/2.jpg" alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/2.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/3.jpg"  alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/3.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/4.jpg"  alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/4.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/5.jpg" alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/5.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/6.jpg" alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/6.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/7.jpg" alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/7.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure>
+<figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/8.jpg" alt="sq-sample27" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/8.jpg')" />
+  <figcaption>
+    <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+    <h2>Shufflay</h2>
+  </figcaption>
+</figure> -->
+<script>
+  $(function() {
+    // $("<figure class='snip1141'><img src='/shufflay/static/img/photo/건축물/1.jpg' /></figure>").appendTo(".photobox");
+    // $(".snip1141 img").attr({
+    //   "src" : "/shufflay/static/img/photo/건축물/1.jpg",
+    //   "alt": "sq-sample14",
+    //   "style" : "cursor: pointer",
+    //   "onclick" : "doImgPop('/shufflay/static/img/photo/건축물/1.jpg')"
+    // });
+
+    let arr = new Array();
+    for(let i=1; i<10; i++){
+      arr.push(i);
+    }
+
+    $(arr).each(function(idx, item){
+
+      $("<figure class='snip1141'><img /></figure>").appendTo(".photobox");
+      $(".snip1141 img:last").attr({
+      "alt": "sq-sample14",
+      "src" : "/shufflay/static/img/photo/building/" + item + ".jpg",
+      "style" : "cursor: pointer",
+      "onclick" : "doImgPop('/shufflay/static/img/photo/building/" + item + ".jpg')"
+      });
+      $("<figcaption><div class='circle'><i class='ion-ios-plus-empty'> </i></div><h2>Shufflay</h2></figcaption>").appendTo(".snip1141:last");
+    });
+   
+  });
+
+
+</script>
+  
+<!--   <figure class="snip1141"><img src="/shufflay/static/img/photo/건축물/에펠탑.jpg" alt="sq-sample14" style="cursor: pointer;" onclick="doImgPop('/shufflay/static/img/photo/건축물/에펠탑.jpg')" />
+   <figcaption>
+     <div class="circle"><i class="ion-ios-plus-empty"> </i></div>
+     <h2>Shufflay</h2>
+   </figcaption>
+ </figure> -->
+
+</body>
