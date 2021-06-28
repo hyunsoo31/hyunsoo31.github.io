@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Shufflay</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+
+        <!-- Custom Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Cute+Font|Patua+One|Do+Hyeon|Nanum+Gothic|Nanum+Myeongjo|Lobster|Dancing+Script|Yeon+Sung&display=swap&subset=korean" rel="stylesheet">
+        <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css" type="text/css">
+
+        <link rel="stylesheet" href="static/css/test.css" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link rel="stylesheet" href="static/css/animate.min.css" type="text/css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="static/css/creative.css" type="text/css">
+
+        <!-- 존수존수가 추가한 New CSS-->
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+        <![endif]-->
+
+    </head>
+
+   <!-- <body data-spy="scroll" data-target="#header">-->
+    <body id="page-top">
+
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" style="letter-spacing: 0em;" href="/shufflay/base.html">Shufflay's BGM 저장소</a>
+                </div>
+    
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="letter-spacing: 0em;font-size: 0px;">
+    
+                    <ul class="nav navbar-nav navbar-right">
+    
+                        <li>
+                            <a class="page-scroll" href="/shufflay/account.html">계정관리</a>
+                        </li>
+                        <!--
+                        <li>
+                            <a class="page-scroll" href="/library">라이브러리</a>
+                        </li>
+                        -->
+                        <li>
+                            <a class="page-scroll" href="/shufflay/bgm.html">BGM</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/shufflay/photo.html">사진</a>
+                        </li>
+                        <!--
+                        <li>
+                            <a class="page-scroll" href="/hot">인기차트</a>
+                        </li>
+                        -->
+                        <li>
+                            <a class="page-scroll" href="/shufflay/community.html">커뮤니티</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/shufflay/upload.html">업로드</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/shufflay/customer.html">고객지원</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/shufflay/team.html">team 소개</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/shufflay/register.html">로그인</a>
+                        </li>
+                         <!-- {% if user.is_active %}
+                        <li><a href="{% url 'account' %}"> <span class="glyphicon glyphicon-heart"></span> {{user.username}}</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                        {% else %}
+                        <li><a href="{% url 'login' %}"> <span class="glyphicon glyphicon-user"></span> Login</a></li>
+                        <li><a href="{% url 'admin:index' %}">Admin</a></li>
+                        {% endif %} -->
+                    </ul>
+    
+                </div>
+    
+                <!-- /.navbar-collapse -->
+            </div>
+    
+            <!-- /.container-fluid -->
+        </nav>
+
+
+
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <!--<a href="/" class="btn btn-primary btn-xl page-scroll back-button">Go Back!</a>-->
+                    <!--
+                    <audio id="background-audio" src='{% static "music/speechless.mp3" %}'autoplay controls></audio>
+                    -->
+    
+
+    
+                    <h1>Shufflay에 오신걸 환영합니다</h1>
+                    <!--<iframe src='{% static "music/장범준.mp3" %}' allow="autoplay" id="audio"></iframe>-->
+    
+                    <hr>
+                    <p>Shufflay에서 당신이 원하는 BGM을 찾으세요!<br>Find your BGM :)</br></p>
+    
+                    <a href="account.html" class="btn btn-primary btn-xl page-scroll">계정 관리 바로가기</a>
+                </div>
+            </div>
+        </header>
+        <header class="header2">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <!--<a href="/" class="btn btn-primary btn-xl page-scroll back-button">Go Back!</a>-->
+                    <!--
+                    <audio id="background-audio" src='{% static "music/speechless.mp3" %}'autoplay controls></audio>
+                    -->
+    
+    
+    
+    
+                    <h1>세상의 모든 BGM!</h1>
+                    <!--<iframe src='{% static "music/장범준.mp3" %}' allow="autoplay" id="audio"></iframe>-->
+    
+                    <hr>
+                    <p>저희 Shufflay에서 찾아볼수 있는 음악들은 모두 저작권 FREE 입니다.<br>저작권 걱정 없이 나만의 영상에 어울리는 음악을 찾아보세요!</br></p>
+    
+                    <a href="/shufflay/bgm.html" class="btn btn-primary btn-xl page-scroll">BGM 바로가기</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="no-padding" id="portfolio">
+            <div class="container-fluid">
+                <div class="row no-gutter">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="library.html" class="portfolio-box">
+                            <img src="/shufflay/static/img/portfolio/11.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Shufflay
+                                    </div>
+                                    <div class="project-name">
+                                        라이브러리
+                                    </div>
+                                    <div class="project-name">
+                                        (준비중)
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="/shufflay/photo.html" class="portfolio-box">
+                            <img src="/shufflay/static/img/portfolio/22.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Shufflay
+                                    </div>
+                                    <div class="project-name">
+                                        사진
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="/shufflay/hot.html" class="portfolio-box">
+                            <img src="/shufflay/static/img/portfolio/33.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Shufflay
+                                    </div>
+                                    <div class="project-name">
+                                        인기 차트
+                                    </div>
+                                    <div class="project-name">
+                                        (준비중)
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="/shufflay/community.html" class="portfolio-box">
+                            <img src="/shufflay/static/img/portfolio/44.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Shufflay
+                                    </div>
+                                    <div class="project-name">
+                                        커뮤니티
+                                    </div>
+                                    <div class="project-name">
+                                        (준비중)
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="/shufflay/upload.html" class="portfolio-box">
+                            <img src="/shufflay/static/img/portfolio/55.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Shufflay
+                                    </div>
+                                    <div class="project-name">
+                                        업로드
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="/shufflay/customer.html" class="portfolio-box">
+                            <img src="/shufflay/static/img/portfolio/66.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Shufflay
+                                    </div>
+                                    <div class="project-name">
+                                        고객지원
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <aside class="bg-dark">
+            <div class="container text-center">
+                <div class="call-to-action">
+                    <h2>Enjoy your Shufflay :)</h2>
+                    <a href="#" class="btn btn-default btn-xl wow tada">TOP!</a>
+                </div>
+            </div>
+        </aside>
+
+
+        <!-- jQuery -->
+        <script src="/shufflay/static/js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/shufflay/static/js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="/shufflay/static/js/jquery.easing.min.js"></script>
+        <script src="/shufflay/static/js/jquery.fittext.js"></script>
+        <script src="/shufflay/static/js/wow.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="/shufflay/static/js/creative.js"></script>
+        <script src="/shufflay/static/js/menu.js"></script>
+
+
+    </body>
+
+</html>
+
+
+<div class ="footer-test" style="background-color: #141414; letter-spacing: 0em;text-transform: none;">
+
+        <section id="contact">
+        <div class="container">
+            <hr style="border: solid 1px #939393; max-width:100%; bottom:-100px; position:relative; width:100%;"></hr>
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2 text-center footer-contact">
+
+                    <h2 class="section-heading" style="color: white; line-height: 1.1; font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; letter-spacing:0; font-weight: 600;text-transform: none; margin-bottom:30px;">Contact</h2>
+                    <div class="info-company">
+                        <h5 style="font-weight: bold; line-height:0;color: #ffffff;letter-spacing: 0em; margin-bottom:40px;">(주) 셔플레이</h5 >
+                        <h5 style="font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; font-weight: 500; margin-top:10px; margin-bottom:10px;color: #969697;letter-spacing: 0em;">Founder 조현수 | 인천 남동구 간석동 거주 </h5>
+                        <h5 style="font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; font-weight: 500; margin-top:10px; margin-bottom:10px;color: #969697;letter-spacing: 0em;">CTO 이청수 | 경기 안산시 거주 </h5>
+                        <h5 style="font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; font-weight: 500; margin-top:10px; margin-bottom:10px;color: #969697;letter-spacing: 0em;">CEO 유재영 | 인천 남동구 구월동 거주 </h5>
+
+                    </div>
+                    <hr class="primary">
+                    <p></p>
+                </div>
+
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn" style="color:white;font-size: 60px; font-family:FontAwesome; font-weight: 500"></i>
+                    <p style="color: white;font-size: 16px;">032-467-8005</p>
+                </div>
+                <div class="col-lg-4  text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" style="color:white;font-size: 60px;; font-family:FontAwesome; font-weight: 500;" data-wow-delay=".1s"></i>
+                    <p><a href="mailto: hyunsoo31@naver.com" style="color: white;font-size: 16px;">hyunsoo31@naver.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

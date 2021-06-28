@@ -18,7 +18,10 @@
 
         <!-- Custom Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Cute+Font|Patua+One|Do+Hyeon|Nanum+Gothic|Nanum+Myeongjo|Lobster|Dancing+Script|Yeon+Sung&display=swap&subset=korean" rel="stylesheet">
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"}'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css" type="text/css">
 
         <link rel="stylesheet" href="static/css/test.css" type="text/css">
 
@@ -87,13 +90,16 @@
                         <a class="page-scroll" href="/shufflay/community.html">커뮤니티</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/shufflay/upload_file.html/">업로드</a>
+                        <a class="page-scroll" href="/shufflay/upload.html">업로드</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/shufflay/customer.html">고객지원</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/shufflay/team.html">team 소개</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/shufflay/register.html">로그인</a>
                     </li>
                      <!-- {% if user.is_active %}
                     <li><a href="{% url 'account' %}"> <span class="glyphicon glyphicon-heart"></span> {{user.username}}</a></li>
@@ -116,7 +122,7 @@
 </div>
 
     <div class="jumbotron text-center" style="width: 100%; background-color: #141414; margin-bottom:0px;">
-        <h1 style="font-family: 'Dancing Script', cursive; color: white; font-weight: bold; font-size: 100px;">Gallery Category.</h1>
+        <h1 style="font-family: 'Varela Round', sans-serif; color: white; font-weight: bold; font-size: 100px;">Gallery Category</h1>
         <p></p>
     </div>
 
@@ -206,4 +212,70 @@
           </div>
     </figcaption>
 </figure>
+
+
 </body>
+        <!-- jQuery -->
+        <script src="/shufflay/static/js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="/shufflay/static/js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="/shufflay/static/js/jquery.easing.min.js"></script>
+        <script src="/shufflay/static/js/jquery.fittext.js"></script>
+        <script src="/shufflay/static/js/wow.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="/shufflay/static/js/creative.js"></script>
+        <script src="/shufflay/static/js/menu.js"></script>
+        <!-- <script>
+            $(function(){
+        var subPage = new Array;
+        subPage[0] = "/shufflay/account.html";
+        subPage[1] = "/shufflay/bgm.html";
+        subPage[2] = "/shufflay/photo.html";
+        subPage[3] = "/shufflay/community.html";
+        subPage[4] = "/shufflay/upload.html";
+        subPage[5] = "/shufflay/customer.html";
+        subPage[6] = "/shufflay/team.html";
+        subPage[7] = "/shufflay/login.html";
+        
+        var url = location.href;
+    
+        var getAr0 = url.indexOf(subPage[0]);
+        var getAr1 = url.indexOf(subPage[1]);
+        var getAr2 = url.indexOf(subPage[2]);
+        var getAr3 = url.indexOf(subPage[3]);
+        var getAr4 = url.indexOf(subPage[4]);
+        var getAr5 = url.indexOf(subPage[5]);
+        var getAr6 = url.indexOf(subPage[6]);
+        var getAr7 = url.indexOf(subPage[7]);
+        
+        if(getAr0 != -1){
+        $("li:eq(0) a").addClass("on")
+        };
+        if(getAr1 != -1){
+        $("li:eq(1) a").addClass("on")
+        };
+        if(getAr2 != -1){
+        $("li:eq(2) a").addClass("on")
+        };
+        if(getAr3 != -1){
+        $("li:eq(3) a").addClass("on")
+        };
+        if(getAr4 != -1){
+        $("li:eq(4) a").addClass("on")
+        };
+        if(getAr5 != -1){
+        $("li:eq(5) a").addClass("on")
+        };
+        if(getAr6 != -1){
+        $("li:eq(6) a").addClass("on")
+        };
+        if(getAr7 != -1){
+        $("li:eq(7) a").addClass("on")
+        };
+        });
+        </script> -->
+        
