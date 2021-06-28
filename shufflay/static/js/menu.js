@@ -1,13 +1,13 @@
 $(function(){
 	var subPage = new Array;
-	subPage[0] = "account";
-	subPage[1] = "bgm";
-	subPage[2] = "photo";
-	subPage[3] = "community";
-	subPage[4] = "upload";
-	subPage[5] = "customer";
-    subPage[6] = "team";
-    subPage[7] = "login";
+	subPage[0] = "account.html";
+	subPage[1] = "bgm.html";
+	subPage[2] = "photo.html";
+	subPage[3] = "community.html";
+	subPage[4] = "upload.html";
+	subPage[5] = "customer.html";
+    subPage[6] = "team.html";
+    subPage[7] = "register.html";
 
 	var url = location.href;
 	var getAr0 = url.indexOf(subPage[0]);
