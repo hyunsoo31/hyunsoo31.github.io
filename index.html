@@ -1,125 +1,80 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intro</title>
-  <style>
-    body {      
-      background:url('images/intro.jpg') no-repeat fixed;   /* 배경 이미지 */
-      background-size: 100% 100%;   /*배경 이미지 크기 */
-      
-    }
-     /* 가로가 1024px 이하면 bg1.jpg 지정 */
-    /*
-    @media screen and (max-width:1024px) {
-      body {
-        background: url(images/bg1.jpg) no-repeat fixed; 
-        background-size: 100% 100%;
-      }
-    }
-    */
-     /* 가로가 768px 이하면 bg2.jpg 지정 */
-    /*
-    @media screen and (max-width:768px) {
-      body {
-        background: url(images/bg2.jpg) no-repeat fixed; 
-        background-size: 100% 100%;
-      }
-    }
-    */
-    h1 {
-      margin-top:50px;   /* 상단 마진 */
-      font-size:5vw;  /* 글자 크기 */
-      text-align: center;     /* 가운데 정렬 */
-      color:#fff;  /* 글자 색 */
-      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
-    }
-    h1:hover {
-      margin-top:50px;   /* 상단 마진 */
-      font-size:5vw;  /* 글자 크기 */
-      text-align: center;     /* 가운데 정렬 */
-      color:rgb(75, 75, 75);  /* 글자 색 */
-      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
-    }
-    h2 {
-      font-size: 5vw; 
-      text-align: center;     /* 가운데 정렬 */
-      color:#fff;  /* 글자 색 */
-      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
-
-    }
-    h2:hover {
-      font-size:5vw;  /* 글자 크기 */
-      text-align: center;     /* 가운데 정렬 */
-      color:rgb(75, 75, 75);  /* 글자 색 */
-      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
-    }
-    h3 {
-      font-size: 3vw; 
-      text-align: right;     /* 가운데 정렬 */
-      color:#fff;  /* 글자 색 */
-      text-shadow:2px 2px #000;  /* 텍스트 그림자 */
-      opacity: 0.5;
-    }
-    #container{
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
-    p {
-      font-size:1.2em;
-    }
-    .display {
-      font-weight:bold;
-      color:rgb(255, 255, 255 );
-    }
-    a{
-      text-decoration: none;
-    }
-
-  </style>
-</head>
-<body>
-  <a href="index.html"><h1>Others</h1></a>
-  <a href="/shufflay/base.html"><h2>Shufflay</h2></a>
-
-  <div id="container">
-    <p><h2><span id="current" class="display"></span></h2></p>
-  </div>
-  <div>
-    <p><h3><span id="today" class="display"></span></h3></p>
-  </div>
-
-  <script>
-    setInterval(displayNow, 1000);  // 1초마다 시간 계산 함수 실행
-    
-
-    function displayNow() {  // 시간 계산 함수
-      var now = new Date();     // Date 객체의 인스턴스를 만듦    
-      var date = new Date();  
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Hyunsu Cho</title>
+		<link href="css/vg.css" rel="stylesheet">
+		<link href="css/vegas.min.css" rel="stylesheet">    
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.min.js"></script>
+		<![endif]-->				
+	</head>
+	<body>  
+		<div id="content">
+      <h1 style="font-size: 3.5vw;">My personal page</h1>				
+      <p><strong><a href="index.html"><button class="mdl-button mdl-js-button">[Personal page]</button></a></strong><br> This is a place for pratice<br>---coming soon---</p>
+	  </div>
+    <div id="content2">
+      <h1 style="font-size: 3.5vw;">Shufflay</h1>				
+      <p><strong><a href="shufflay/base.html"><button class="mdl-button mdl-js-button">[Shufflay]</button></a></strong><br> This is a website prototype<br>I made when I was in a start-up club</p>
   
-      var currentTime = now.toLocaleTimeString();     //  toLocaleTmeString() 메서드를 사용해 지역에 맞는 시간을 가져옴
-      //var currentTime = now.toTimeString(); // 시간 GMT+900 (KOREAN STANDRAD)
-      //var currentTime = now.toDateString(); // 시간 정보 x
-      //var currentTime = now.toLocaleString(); // m/d/y time
-      var year = String(date.getFullYear());
-      var month = String(date.getMonth()+1);
-      var date = String(date.getDate());
-      if(month.length==1) {
-        month = "0" + month;
-      }
-      if(date.length==1){
-        date = "0" + date;
-      }
-      var today = year +"-"+ month + "-"+ date;
-      
 
-    
-      document.querySelector("#current").innerHTML = currentTime;   // id="current" 인 요소에 현재 시간 표시
-      document.querySelector("#today").innerHTML = today;   // id="current" 인 요소에 현재 시간 표시
+	  </div>
    
-    }
-  </script>
- </body>
+    <div id="container">
+      <div id="content3">
+      <p><h1 style="font-size: 7vw;"><span id="current" class="display"></span></h1></p>
+      </div>
+    </div>
+    <div id = "content4">
+      <p><h1 style="font-size: 3vw;"><span id="today" class="display"></span></h1></p>
+    </div>
+  
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/vegas.min.js"></script>
+		<script>
+			$(function(){
+				$('body').vegas({
+					slides:[
+						{src:'images/intro3.jpg'},
+						{src:'images/intro1.jpg'},
+						{src:'images/intro4.jpg'},
+					],
+					delay:3500
+				});			
+			});
+		</script>		
+      <script>
+        setInterval(displayNow, 1000);  // 1초마다 시간 계산 함수 실행
+        
+    
+        function displayNow() {  // 시간 계산 함수
+          var now = new Date();     // Date 객체의 인스턴스를 만듦    
+          var date = new Date();  
+      
+          var currentTime = now.toLocaleTimeString();     //  toLocaleTmeString() 메서드를 사용해 지역에 맞는 시간을 가져옴
+          //var currentTime = now.toTimeString(); // 시간 GMT+900 (KOREAN STANDRAD)
+          //var currentTime = now.toDateString(); // 시간 정보 x
+          //var currentTime = now.toLocaleString(); // m/d/y time
+          var year = String(date.getFullYear());
+          var month = String(date.getMonth()+1);
+          var date = String(date.getDate());
+          if(month.length==1) {
+            month = "0" + month;
+          }
+          if(date.length==1){
+            date = "0" + date;
+          }
+          var today = year +"-"+ month + "-"+ date;
+          
+    
+        
+          document.querySelector("#current").innerHTML = currentTime;   // id="current" 인 요소에 현재 시간 표시
+          document.querySelector("#today").innerHTML = today;   // id="current" 인 요소에 현재 시간 표시
+       
+        }
+      </script>
+	</body>
 </html>
